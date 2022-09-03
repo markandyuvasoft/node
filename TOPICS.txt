@@ -1,0 +1,126 @@
+..
+1. CREATE A API TO PERFORM CRUD OPERATIONS.....(FIRSTYLY GENERATE TOKEN THEN CRUD)
+= folder to be use,
+A. app.js
+B. db-conn.js
+C. models-students.js
+D. routes-student.js
+......................................................................................................................
+
+2. CREATE A REGISTRATION ROUTE WITH BCRYPT PASSWORD.....
+= folder to be use 
+A. middleware-checkauth.js
+B. models- user.js
+C. routes- user.js
+.......................................................................................................................
+
+3. CREATE A LOGIN ROUTE GENERATE JWT TOKEN......
+= folder to be use 
+A. middleware-checkauth.js
+B. models- user.js
+C. routes- user.js
+.......................................................................................................................
+
+4. CRUD ONLY PERFORM TO ONLY TOKEN USER......(LOGIN TIME GIVE TOKEN)....
+
+(NOTE=ONLY TYPE checkAuth IN STUDENT).
+
+("PROCESS=first user register then login to given a token this token to use 
+crud operation like  goto GET method, Header to KEY is Authorization, 
+VALUE is Bearer and paste token").
+
+= folder to be use 
+A. models-students.js
+B. routes-student.js
+.......................................................................................................................
+
+5. CREATE ONE TO MANY ASSOCIATION(it's a ONE PARENT AND MULTIPLE CHILD)....
+
+(NOTE= one to many association it's a parent child combination this association
+to create ONE parent and MULTIPLE child).
+
+("PROCESS= firstly post the publisher details ("publisher is PARENT"), 
+then post the book details("book is child"), 
+this book details to add "publisher:id" of parent, 
+then GET method run to get association result).
+
+= folder to be use 
+A. models-book.js, publish.js
+B. routes- library.js
+.......................................................................................................................
+
+6. CREATE MANY TO MANY ASSOCIATION (it's a multiple parent and multiple child)...
+
+(NOTE= one to many association it's a parent child combination this association
+to create MULTIPLE parent and MULTIPLE child).
+
+("PROCESS= firstly post the child details(your wish "n" times),
+then post the parent details(your wish "n" times), 
+then post the custody with parent child name("copy the child id"),
+then get the parents with child id")
+
+= folder to be use 
+A. routes- custody.js
+B. models- parent.js,child.js,pc.js
+ .......................................................................................................................
+
+7. CREATE A PIPELINE AGGRIGATION.....
+
+(NOTE= firstly install the morgan and import app.js).
+
+("PROCESS firstly POST the user details according to verify model,
+then GET the users details,
+then apply GET process designation according find name AND
+goto BODY-FORMDATA AND APPLY SORT NAME WISE, 
+then GET the MAX salary department according").
+
+= folder to be use 
+A. routes- match.js
+B. models- verify.js
+........................................................................................................................
+
+8. CREATE A LOOKUP AGGRIGATION.....
+
+(NOTE= firstly install the morgan and import app.js,
+(Join the two different collection but name and contact name must be same)).
+
+("PROCESS POST the data1 details according to DEL1 model,
+then POST the data2 details accoring to DEL2 model,
+then GET the details max1").
+
+=folder to be use
+A. routes-look.js
+B. models-del1.js,del2.js
+.........................................................................................................................
+
+9. CREATE A PAGINATION.....
+
+(NOTE=Count the page, set the limit, search the details, show the name sort wise).
+
+("PROCESS firstly POST the page routes data,
+then GET the data on pages route, 
+then apply the GET method condition wise to goto
+("PARAMS and apply KEY AND VALUE= page,limit,sort,search")").
+
+=folder to be use
+A. routes-pagi.js
+B. models-page.js
+.........................................................................................................................
+
+10. CREATE A FILE UPLOADING......
+
+(NOTE= firstly install the multer, 
+use to upload the single and multiple images and pdf's)
+
+("PROCESS=firstly POST the single image goto the Body and select the formdata,
+then POST the multiple image goto body and formdata")
+
+=folder to be use
+A. models- single.js,multiple.js
+B. routes- file.js
+.........................................................................................................................
+
+
+.........................................................................................................................
+. NOTE= ALL THE TOPICS app.js,and db folder are common .
+.........................................................................................................................
